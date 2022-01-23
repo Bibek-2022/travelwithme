@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  background: #fefbe9;
+  line-height: 1.4;
+  color: #041a07;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+.global-msg {
+  background: #183a1d;
+  color: white;
+  padding: 10px 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #183a1d;
+}
+button {
+  background-color: #1d4924;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  float: right;
+  box-shadow: -2px 3px 7px #ccecd1;
+}
+.card {
+  background-color: #cff5d55e;
+  min-width: 350px;
+  margin: 10px;
+  min-height: 350px;
+  padding-bottom: 20px;
+  /* box-shadow: -5px 3px 6px 4px rgb(76, 88, 76); */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* ================Global MSG=============== */
+.global-msg .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons i {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+/* Header */
+.header {
+  /* background: #f6c453; */
+  color: #25522c;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-weight: bolder; */
+  font-size: 20px;
+}
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  font-family: Roboto;
+  /* gap: 10px; */
+}
+.menu ul li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  color: #041a07;
+  text-decoration: underline;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+}
+
+.menu i {
+  display: none;
+}
+/* =========Hero Section =============== */
+.hero {
+  min-height: 80vh;
+  background: url(./assets/img1.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0.75; */
+}
+
+.hero-content {
+  background: #25522c;
+  /* width: 100%;
+  min-height: 100vh; */
+  color: white;
+  opacity: 0.8;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px black;
+}
+
+/* Latest */
+/* .latest {
+  display: flex;
+  flex-direction: row;
+} */
+
+.latest-section {
+  margin-top: 60px;
+}
+
+.latest-content {
+  display: flex;
+  flex-direction: row;
+}
+.latest {
+  width: 60%;
+}
+
+.latest article {
+  margin-top: 75px;
+}
+.post-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-content img {
+  width: 200px;
+  border: 1px solid rgba(89, 114, 89, 0.589);
+  border-radius: 5px;
+  box-shadow: -8px 8px 12px 4px rgb(76, 88, 76);
+}
+.info {
+  margin: 0 20px;
+}
+date {
+  background: #7fdb8d46;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* ==========aside============ */
+.links {
+  background: #7fdb8d18;
+  width: 40%;
+  border-radius: 5px;
+  padding: 32px 16px;
+}
+
+.by-country {
+  margin-top: 64px;
+}
+/* aside {
+  width: 40%;
+} */
+
+/* =============rec=========== */
+.rec {
+  margin-top: 64px;
+}
+
+.rec-content {
+  display: flex;
+}
+.rec-content img {
+  width: 100%;
+}
+
+/* ==============Subscriber ======= */
+.subscribe {
+  background-color: #cff5d55e;
+  margin: 64px auto;
+  min-height: 200px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 32px;
+  border-bottom-left-radius: 130px;
+}
+.subscribe input {
+  padding: 10px;
+  border: none;
+}
+[type="submit"] {
+  background-color: #25522c;
+  border-radius: 5px;
+  color: white;
+  margin-left: 5px;
+}
+
+[type="submit"]:hover {
+  background-color: black;
+  /* color: #041a07; */
+}
+/* ================footer================= */
+.footer {
+  background: #183a1d;
+  padding: 64px 0;
+  color: white;
+  text-align: center;
+}
+
+/* ========media queries=========== */
+@media (max-width: 768px) {
+  .header {
+    height: 62px;
+  }
+  .menu ul {
+    display: none;
+  }
+  .menu i {
+    display: block;
+  }
+  .latest-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .latest {
+    width: 100%;
+  }
+  .links {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+  }
+  .by-country {
+    margin: 0;
+  }
+  .rec-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .post-content img {
+    width: 100%;
+  }
+  .latest article {
+    margin-top: 115px;
+  }
+  .subscribe form {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    /* align-items: center;
+    justify-content: center; */
+  }
+  .subscribe form input {
+    margin-bottom: 16px;
+  }
+}
